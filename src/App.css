@@ -10,9 +10,9 @@
 	background-color: #F1F1F1;
 }
 .theme.dark {
-	/* TODO */
+	color: #F1F1F1;
+	background-color: #686868;
 }
-
 /* Utgå alltid från komponentens klass, för att inte sabotera CSS:en för andra komponenter. CSS som ska gälla för alla buttons är bättre att lägga i index.css. */
 .theme button {
 	padding: 0.3em 1.2em;
