@@ -1,4 +1,4 @@
-
+// En komponent som kan ändra tema mellan ljust och mörkt.
 
 const Theme = () => {
 

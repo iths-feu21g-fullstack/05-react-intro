@@ -3,18 +3,34 @@
 	min-height: 100vh;
 }
 
+/* Allmänna inställningar för komponenten */
 .theme {
 	padding: 1em;
 	color: #686868;
 	background-color: #F1F1F1;
 }
+.theme.dark {
+	/* TODO */
+}
+
+/* Utgå alltid från komponentens klass, för att inte sabotera CSS:en för andra komponenter. CSS som ska gälla för alla buttons är bättre att lägga i index.css. */
 .theme button {
 	padding: 0.3em 1.2em;
 	border-radius: 0.5em;
 	margin: 0.2em;
+	background-color: #F7F3B2;
+	border: none;
+}
+.theme.dark button {
+	background-color: #706B17;
+}
+.theme button:hover {
+	cursor: pointer;
+	background-color: #EAE485;
 }
 
-/* 
+/*
+Använd relativa enheter (em, rem) i stället för absoluta (px) så behålls proportionerna när du ändrar storlekar.
 em  - relaterad till teckenstorleken i aktuellt element
 rem - relaterad till teckenstorleken som finns i <body>
 
